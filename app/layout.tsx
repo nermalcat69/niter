@@ -6,6 +6,7 @@ const title = 'Niter - Fix Grammar Mistakes Efficiently';
 const description = 'Fix grammar with gpt-3.5 for free.';
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://niter.vercel.app'),
   title,
   description,
   openGraph: {
