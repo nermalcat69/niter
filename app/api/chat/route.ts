@@ -27,8 +27,7 @@ export async function POST(req: Request) {
             : null
         }
           Implement standard grammar and punctuation, and ensure that small details and spelling errors are corrected. Please base the changes on this context: ${article}
-          ${article.slice(-1) === "." ? "" : "."
-        }`,
+          ${article.slice(-1) === "." ? "" : "."}`,
       },
     ],
   });
