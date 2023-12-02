@@ -17,7 +17,7 @@ export type FixType =
 
 interface DropDownProps {
   fix: FixType;
-  setVibe: (fix: FixType) => void;
+  FixType: (fix: FixType) => void;
 }
 
 let fixes: FixType[] = [
