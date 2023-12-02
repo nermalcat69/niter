@@ -24,4 +24,4 @@ Writing good english with good vocabulary, with no grammar mistakes and no punct
 
 ### Contribution
 
-You're free to do a pull request here :D
+You're free to do a pull request here and dont forget to check the issues:D
