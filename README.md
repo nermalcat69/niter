@@ -1,4 +1,5 @@
 # Niter
+<img width="1000" alt="header image" src="https://github.com/nermalcat69/niter/assets/73933669/feaf28d2-ff52-4330-9fb1-1c481bf95cef">
 
 Writing good english with good vocabulary, with no grammar mistakes and no punctuation mistakes is difficult for a lot of people. Use Niter and fix your life!!!
 
