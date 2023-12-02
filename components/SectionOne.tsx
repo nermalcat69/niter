@@ -41,7 +41,7 @@ export default function SectionOne() {
 
         <img
           className="mt-14 select-none"
-          src="hero.png"
+          src="header.png"
           width={1000}
           draggable={false}
           alt="hero image"
