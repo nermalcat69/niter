@@ -43,8 +43,10 @@
   }
 }
 
-body {
+.bodyfr {
   background-color: #fff;
+  background-size: 45px 45px;
+  background-image: linear-gradient(rgb(241, 246, 255) .1em, transparent .1em), linear-gradient(90deg, rgba(241, 246, 255) .1em, transparent .1em);
 }
 
 .openai {
@@ -52,3 +54,7 @@ body {
 }
 
 /* F9FAFB */
+
+.footerblur {
+  background-image: url(/public/blueblur.svg);
+}
