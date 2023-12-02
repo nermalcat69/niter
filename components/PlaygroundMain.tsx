@@ -3,43 +3,6 @@ import DropDown, { FixType } from "../components/DropDown";
 import User from "./globals/User";
 import { useChat } from "ai/react";
 import { Toaster, toast } from "react-hot-toast";
-import { Configuration, OpenAIApi } from "openai-edge";
-import { OpenAIStream, StreamingTextResponse } from "ai";
-
-const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(config);
-
-export const runtime = "edge";
-
-export async function POST(req: Request) {
-  const { fix, article } = await req.json();
-
-  const response = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
-    stream: true,
-    messages: [
-      {
-        role: "system",
-        content: "You are a helpful assistant that fixes articles.",
-      },
-      {
-        role: "user",
-        content: `Fix ${fix} of this updated article. ${
-          fix === "Grammar & Punctuations"
-            ? "Implement standard grammar and punctuation, and ensure that small details and spelling errors are corrected."
-            : null
-        }
-          Implement standard grammar and punctuation, and ensure that small details and spelling errors are corrected. Please base the changes on this context: ${article}
-          ${article.slice(-1) === "." ? "" : "."}`,
-      },
-    ],
-  });
-
-  const stream = OpenAIStream(response);
-  return new StreamingTextResponse(stream);
-}
 
 export default function PlaygroundMain() {
   const [article, rawArticle] = useState("");
@@ -58,8 +21,7 @@ export default function PlaygroundMain() {
   };
 
   const lastMessage = messages[messages.length - 1];
-  const generatedArticles =
-    lastMessage?.role === "assistant" ? lastMessage.content : null;
+  const generatedArticles = lastMessage?.role === "assistant" ? lastMessage.content : null;
   return (
     <section className="select-none">
       <div className="flex items-stretch w-full  border-b border-gray-200">
