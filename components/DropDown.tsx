@@ -10,20 +10,27 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type VibeType = "Professional" | "Casual" | "Funny";
+export type VibeType =
+  | "Grammar & Punctuations"
+  | "British Vocabulary"
+  | "American Vocabulary";
 
 interface DropDownProps {
   vibe: VibeType;
   setVibe: (vibe: VibeType) => void;
 }
 
-let vibes: VibeType[] = ["Professional", "Casual", "Funny"];
+let vibes: VibeType[] = [
+  "Grammar & Punctuations",
+  "British Vocabulary",
+  "American Vocabulary",
+];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
     <Menu as="div" className="relative block text-left w-full">
       <div>
-        <Menu.Button className="inline-flex w-full justify-between items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black">
+        <Menu.Button className="inline-flex w-full justify-between items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-300">
           {vibe}
           <ChevronUpIcon
             className="-mr-1 ml-2 h-5 w-5 ui-open:hidden"
@@ -58,7 +65,7 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       vibe === vibeItem ? "bg-gray-200" : "",
-                      "px-4 py-2 text-sm w-full text-left flex items-center space-x-2 justify-between"
+                      "px-4 py-2 text-sm w-full text-left flex items-center space-x-2 justify-between",
                     )}
                   >
                     <span>{vibeItem}</span>
