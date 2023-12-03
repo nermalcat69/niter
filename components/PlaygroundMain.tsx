@@ -52,7 +52,7 @@ export default function PlaygroundMain() {
               <textarea
                 value={input}
                 onChange={handleInputChange}
-                rows={18}
+                rows={10}
                 className="w-full resize-none max-w rounded-md border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 my-5"
                 placeholder={"I want my article fixed."}
               />
