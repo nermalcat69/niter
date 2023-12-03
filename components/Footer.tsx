@@ -3,7 +3,7 @@ import { AiTwotoneHeart } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <footer className="footerblur mt-10 mb-5">
+    <footer className=" mt-10 mb-5">
       <div className=" -translate-y-6">          <svg width="154" height="42" viewBox="0 0 154 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 10.1199C5.96485 8.42069 9.43823 6.06224 13.6071 4.65249C20.4661 2.333 27.6959 1.26838 34.5805 4.11471C51.9478 11.295 61.175 30.4585 78.5887 37.9052C84.5732 40.4643 91.2414 40.4779 97.6351 40.1907C106.966 39.7716 116.188 38.2115 125.308 36.2694C134.157 34.3852 142.936 31.4966 152.04 31.4966" stroke="#CBD781" stroke-width="3" stroke-linecap="round"/>
 </svg>
