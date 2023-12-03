@@ -27,7 +27,7 @@ export async function POST(req: Request) {
             : null
         }
           ${article}
-          ${article.slice(-1) === "."}`,
+          ${article.slice(-1) === "." ? "" : "."}`,
       },
     ],
   });
