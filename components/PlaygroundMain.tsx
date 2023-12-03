@@ -16,6 +16,7 @@ export default function PlaygroundMain() {
   } = useChat({ body: { fix, article } });
 
   const onSubmit = (e: any) => {
+    e.preventDefault();
     rawArticle(input);
     handleSubmit(e);
   };
