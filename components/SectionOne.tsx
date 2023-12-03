@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IoChevronForward } from "react-icons/io5";
+import Image from 'next/image'
 
 export default function SectionOne() {
   return (
@@ -41,9 +42,9 @@ export default function SectionOne() {
             <IoChevronForward />
           </span>
         </Link>
-        <img
+        <Image
           className="mt-14 select-none"
-          src="header.png"
+          src="header.webp"
           width={1000}
           draggable={false}
           alt="hero image"
