@@ -112,7 +112,7 @@ export default function PlaygroundMain() {
                               <div>
                                 <div className="flex items-start space-x-4">
                                   <div
-                                    className="bg-zinc-50 border mr-16 max-w-[500px] block py-2 px-2 rounded-lg"
+                                    className="bg-zinc-50 border mr-16 max-w-[500px] block py-2 px-2 cursor-copy rounded-lg"
                                     onClick={() => {
                                       navigator.clipboard.writeText(
                                         generatedArticle,
