@@ -51,7 +51,7 @@ export default function PlaygroundSidebar() {
           Star Us On Github
         </Link>
       </div>
-      <div className="flex flex-col justify-center items-center my-auto py-12 text-gray-600 ">
+      <div className="flex flex-col justify-center items-center my-auto text-gray-600 ">
         <Link
           href="https://vercel.com/"
           target="_blank"
