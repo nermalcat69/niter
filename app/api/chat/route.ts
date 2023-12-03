@@ -16,6 +16,10 @@ const response = await openai.createChatCompletion({
   stream: true,
   messages: [
     {
+      role: "system",
+      content: article,
+    },
+    {
       role: "user",
       content: `Fix ${fix} of this updated article.${
         fix === "Grammar & Punctuations"
