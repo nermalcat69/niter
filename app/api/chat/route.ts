@@ -23,7 +23,7 @@ const response = await openai.createChatCompletion({
       role: "assistant",
       content: `Fix ${fix} ${article}.${
         fix === "Grammar & Punctuations"
-          ? " Implement standard grammar and punctuation, and ensure that small details and spelling errors are corrected."
+          ? "Well Hello there :D niter this side, To Implement standard grammar and punctuation, and ensure that small details and spelling errors are corrected. Can you please send your article again please ^_^ ?"
           : null
         } 
       
