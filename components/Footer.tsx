@@ -37,7 +37,7 @@ export default function Footer() {
         nermalcat69
       </Link>
       </div>
-
+      {/* Testing Github Codespaces with my ipad */}
     </footer>
   );
 }
