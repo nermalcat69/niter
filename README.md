@@ -25,7 +25,7 @@ Welcome to **Niter**, your go-to tool for enhancing the quality of your written 
 
 ## Usage
 1. Navigate to the [homepage](https://niter.vercel.app) to access Niter.
-2. Click on the engaging [playground]()https://niter.vercel.app/playground feature.
+2. Click on the engaging [playground](https://niter.vercel.app/playground) feature.
 3. Simply paste your article into the chat section, and witness the magic unfold as Niter provides you with a preview of your article, impeccably corrected for punctuation and grammar.
 
 ## Installation Guide
